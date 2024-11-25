@@ -156,7 +156,7 @@ def get_time_and_date():
 
 
 # OpenWeather API parametrləri
-API_KEY = "5e2ed3f7725133ea5249a99a113c3667"  # Buraya öz açarınızı yazın
+API_KEY = "???"  # Buraya öz açarınızı yazın
 BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
 
 # Hava proqnozunu əldə edən funksiya
