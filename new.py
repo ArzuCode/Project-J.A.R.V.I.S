@@ -8,6 +8,7 @@ import sounddevice as sd
 import numpy as np
 from vosk import Model, KaldiRecognizer
 import os
+from audio_test import play_audio, record_audio
 
 # Vosk modelini yükləyin (sadəcə ingilis dilində dəstəkləyir)
 MODEL_PATH = "vosk-model-small-en-us-0.15"  # Modelin qovluq adı
@@ -76,7 +77,16 @@ def get_time_and_date():
     current_date = now.strftime("%d-%m-%Y")
     return f"Bu günün tarixi: {current_date}\nCari vaxt: {current_time}"
 
-# ==== Hava Proqnozu ==== 
+# <<<<<<< HEAD
+# # ==== Hava Proqnozu ==== 
+# =======
+
+# OpenWeather API parametrləri
+API_KEY = "???"  # Buraya öz açarınızı yazın
+BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
+
+# Hava proqnozunu əldə edən funksiya
+# >>>>>>> 01bed02b48c59f8c871dddb63910f037d1c52799
 def get_weather(city):
     try:
         url = f"{BASE_URL}?q={city}&appid={API_KEY}&units=metric&lang=az"
